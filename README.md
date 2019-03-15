@@ -1,8 +1,6 @@
 # NodeJS Master Class Homework Assignment #3
 Third assignment for the NodeJS Master Class Course (https://pirple.thinkific.com/courses/take/the-nodejs-master-class/)
 
-# NodeJS Master Class Homework Assignments
-
 ## Assignment #3
 
 ### How to Turn It In:
