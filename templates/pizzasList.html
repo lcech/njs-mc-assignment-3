@@ -1,0 +1,96 @@
+<div class="container">
+  <h1 class="main-heading">Menu <small> - select your pizza here</small></h1>
+  <div id="pizzas">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-text">Margherita</h2>
+            <p><img src="/public/pizzas/Margherita.jpg" alt="Margherita"></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">5 USD</small>
+              <div class="btn-group">
+                <form id="cartAdd1" action="/api/carts" method="POST">
+                  <input type="hidden" name="productId" value="-LV3hWMNFffr41qtCNr7" />
+                  <input type="hidden" name="items" value="1" />
+                  <button type="submit" class="btn btn-primary">Add to Cart »</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-text">Funghi</h2>
+            <p><img src="/public/pizzas/Funghi.jpg" alt="Funghi"></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">6 USD</small>
+              <div class="btn-group">
+                <form id="cartAdd2" action="/api/carts" method="POST">
+                  <input type="hidden" name="productId" value="-LV3hWXhYIQiRgzbvIkK" />
+                  <button type="submit" class="btn btn-primary">Add to Cart »</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-text">Pepperoni</h2>
+            <p><img src="/public/pizzas/Pepperoni.jpg" alt="Pepperoni"></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">7 USD</small>
+              <div class="btn-group">
+                <form id="cartAdd3" action="/api/carts" method="POST">
+                  <input type="hidden" name="productId" value="-LV3hWZjrUiGjj2pXnL0" />
+                  <input type="hidden" name="items" value="1" />
+                  <button type="submit" class="btn btn-primary">Add to Cart »</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-text">Quattro Formaggi</h2>
+            <p><img src="/public/pizzas/Quattro-Formaggi.jpg" alt="Quattro Formaggi"></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">7 USD</small>
+              <div class="btn-group">
+                <form id="cartAdd4" action="/api/carts" method="POST">
+                  <input type="hidden" name="productId" value="-LV3hWakOsl7FnTcv-IB" />
+                  <input type="hidden" name="items" value="1" />
+                  <button type="submit" class="btn btn-primary">Add to Cart »</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-text">Quattro Stagioni</h2>
+            <p><img src="/public/pizzas/Quattro-Stagioni.jpg" alt="Quattro Stagioni"></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">8 USD</small>
+              <div class="btn-group">
+                <form id="cartAdd5" action="/api/carts" method="POST">
+                  <input type="hidden" name="productId" value="-LV3hWcqd7V-R9bVyzf2" />
+                  <input type="hidden" name="items" value="1" />
+                  <button type="submit" class="btn btn-primary">Add to Cart »</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

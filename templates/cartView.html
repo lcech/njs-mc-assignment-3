@@ -1,0 +1,27 @@
+<div class="container">
+  <h1 class="main-heading">Shopping cart
+    <small> - update your order</small>
+  </h1>
+  <table id="cartItemsTable" class="table">
+    <tr>
+      <th>Pizza</th>
+      <th>Items</th>
+      <th>Price</th>
+    </tr>
+    <tr id="noItemsMessage">
+      <td colspan="3">You have no pizzas in shopping cart,
+        <a href="/pizzas/all">please add some</a>!</td>
+    </tr>
+  </table>
+  <hr />
+  <nav class="navbar navbar-light bg-light">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <form id="deleteCart" action="/api/carts" method="DELETE" class="form-inline navbar-left my-lg-0">
+      <input type="hidden" name="_method" value="DELETE" />
+      <button type="submit" class="btn btn-sm btn-outline-secondary">Empty cart »</button>
+    </form>
+    <form id="makeOrder" action="/api/orders" method="POST" class="form-inline navbar-right my-lg-0">
+      <button type="submit" class="btn btn-primary">Make order »</button>
+    </form>
+  </nav>
+</div>

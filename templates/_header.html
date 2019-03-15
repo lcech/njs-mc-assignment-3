@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <!-- General Purpose Settings -->
+  <meta charset="utf8">
+  <meta http-equiv="content-language" content="cs-CZ">
+  <base href="{global.baseUrl}">
+
+  <!-- Meta tags -->
+  <title>{head.title} | {global.appName}</title>
+  <meta name="description" content="{head.description}">
+
+  <!-- Static resources -->
+  <link type="image/x-icon" rel="icon" href="favicon.ico">
+  <script type="text/javascript" charset="utf8" src="public/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="public/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="public/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="{body.class}">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <i class="fas fa-pizza-slice"></i> Pizza delivery</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pizzas/all">Our menu</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item loggedOut">
+            <a class="nav-link" href="/account/create">Signup</a>
+          </li>
+          <li class="nav-item loggedOut">
+            <a class="nav-link" href="/session/create">Login</a>
+          </li>
+          <li class="nav-item loggedIn">
+            <a class="nav-link" href="/cart/view">Shopping cart</a>
+          </li>
+          <li class="nav-item loggedIn">
+            <a class="nav-link" href="/account/edit">Account Settings</a>
+          </li>
+          <li class="nav-item loggedIn">
+            <a class="nav-link" href="#" id="logoutButton">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main" class="container"></main>

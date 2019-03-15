@@ -1,0 +1,24 @@
+{
+  "name": "njs-mc-assignment-3",
+  "version": "1.0.0",
+  "description": "NodeJS Master Class Homework Assignment #3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:debug": "NODE_DEBUG='handlers,data,helpers' node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcech/njs-mc-assignment-3.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api"
+  ],
+  "author": "ja@lukascech.cz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lcech/njs-mc-assignment-3/issues"
+  },
+  "homepage": "https://github.com/lcech/njs-mc-assignment-3#readme"
+}

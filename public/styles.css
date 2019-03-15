@@ -1,0 +1,23 @@
+body {
+  padding-top: 3.5rem;
+}
+
+.navbar ul li.loggedIn {
+  display: none;
+}
+
+body.loggedIn .navbar ul li.loggedIn {
+  display: inline-block;
+}
+
+body.loggedIn .navbar ul li.loggedOut {
+  display: none;
+}
+
+.main-heading {
+  padding: 3rem 0 1rem 0;
+}
+
+.card-body img {
+  width: 100%;
+}

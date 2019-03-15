@@ -1,0 +1,61 @@
+<div class="container">
+  <h1 class="main-heading">Account Settings</h1>
+  <hr />
+  <h2>Edit your account details</h2>
+
+  <form id="accountEdit1" action="/api/users" method="PUT">
+    <input type="hidden" name="_method" value="PUT" />
+
+    <div class="formError" style="display:none"><div class="alert alert-danger" role="alert"></div></div>
+    <div class="formSuccess" style="display:none"><div class="alert alert-success" role="alert">Your Changes Have Been Saved</div></div>
+
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" class="form-control firstNameInput" placeholder="John">
+    </div>
+    <div class="form-group">
+      <label for="firstName">Last Name</label>
+      <input type="text" name="lastName" class="form-control lastNameInput" placeholder="Smith">
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" name="email" class="form-control displayEmailInput" id="email" disabled>
+    </div>
+    <div class="form-group">
+      <label for="streetAddress">Street Address</label>
+      <input type="text" name="streetAddress" class="form-control streetAddressInput" placeholder="Long Street 101">
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+  </form>
+
+  <hr />
+  <h2>Change Your Password</h2>
+
+  <form id="accountEdit2" action="/api/users" method="PUT">
+    <input type="hidden" name="_method" value="PUT" />
+    <input class="hiddenEmailInput" type="hidden" name="email" />
+
+    <div class="formError" style="display:none"><div class="alert alert-danger" role="alert"></div></div>
+    <div class="formSuccess" style="display:none"><div class="alert alert-success" role="alert">Your New Password Has Been Saved</div></div>
+
+    <div class="form-group">
+      <label for="password">Choose a New Password</label>
+      <input type="password" name="password" class="form-control" id="password" placeholder="Make it a good one!">
+    </div>
+    <button type="submit" class="btn btn-primary">Save Password</button>
+  </form>
+
+  <hr />
+  <h2>Delete Your Account</h2>
+
+  <form id="accountEdit3" action="/api/users" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE" />
+    <input class="hiddenEmailInput" type="hidden" name="email" />
+
+    <div class="formError" style="display:none"><div class="alert alert-danger"></div></div>
+    <div class="warning"><div class="alert alert-danger" role="alert">Warning: This action cannot be undone. Dont click this button on accident!</div></div>
+    
+
+    <button type="submit" class="btn btn-warning">Delete Account</button>
+  </form>
+</div>
